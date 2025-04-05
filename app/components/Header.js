@@ -1,14 +1,12 @@
-"use client";
 import { AlignJustify } from "lucide-react";
-import { useState } from "react";
+import Button from "./ui/Button";
 
-export default function Header() {
-	const [isOpenMenu, setIsOpenMenu] = useState(false);
+export default function Header({ isOpenMenu, setIsOpenMenu }) {
 	return (
 		<section className="z-50 relative w-full flex justify-between items-center py-3 bg-white">
 			{/* Logo */}
-			<div className=" font-poppins text-3xl flex justify-center items-center gap-1 tracking-wide font-bold">
-				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue text-white">
+			<div className=" font-poppins text-xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-bold">
+				<span className="flex justify-center items-center px-2 sm:px-3.5 h-[30px] sm:h-[40px] bg-skblue text-white">
 					sk
 				</span>
 				<span className="text-skblue">oolution</span>
@@ -29,14 +27,7 @@ export default function Header() {
 			{/* Login + Menu*/}
 			<div className="flex justify-center items-center gap-4">
 				{/* Login */}
-				<div>
-					<a
-						href="#"
-						className="flex justify-center items-center text-base text-white bg-skblue px-7 h-[40px] font-semibold"
-					>
-						Commencer
-					</a>
-				</div>
+				<Button href="#" color="text-white" bg="bg-skblue" text="Commencer" />
 				{/* Humberger Menu */}
 				<div className="lg:hidden">
 					<AlignJustify
@@ -51,7 +42,7 @@ export default function Header() {
 							isOpenMenu
 								? "translate-x-0 opacity-100"
 								: "translate-x-[110%] opacity-100"
-						}`}
+						}  h-screen`}
 					>
 						<a
 							href="#"
