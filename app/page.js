@@ -7,7 +7,7 @@ export default function Home() {
 	const [isOpenMenu, setIsOpenMenu] = useState(false);
 	return (
 		<section
-			className={`w-full flex justify-center overflow-x-hidden min-h-screen ${
+			className={`w-full flex justify-center overflow-x-hidden ${
 				isOpenMenu && "overflow-y-hidden"
 			}`}
 		>

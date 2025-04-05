@@ -5,11 +5,11 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 	return (
 		<section className="z-50 relative w-full flex justify-between items-center py-3 bg-white">
 			{/* Logo */}
-			<div className=" font-poppins text-xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-bold">
-				<span className="flex justify-center items-center px-2 sm:px-3.5 h-[30px] sm:h-[40px] bg-skblue text-white">
+			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-bold">
+				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue text-white">
 					sk
 				</span>
-				<span className="text-skblue">oolution</span>
+				<span className="text-skblue hidden sm:inline-block">oolution</span>
 			</div>
 			{/* Navbar */}
 			<nav className="hidden lg:flex gap-[38px]">
