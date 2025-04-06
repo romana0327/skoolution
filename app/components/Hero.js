@@ -18,7 +18,9 @@ export default function Hero() {
 				</p>
 				<div className="flex items-center  gap-2">
 					<img src="/morocco.png" alt="Moroccan Flag" />
-					<p className="text-[#848484]">Programme officiel 2024-2025</p>
+					<p className="text-[#848484] text-[14px]">
+						Programme officiel 2024-2025
+					</p>
 				</div>
 				<div className="flex gap-3">
 					<Button href="#" color="text-white" bg="bg-skblue" text="Commencer" />
@@ -81,12 +83,12 @@ export default function Hero() {
 					</div>
 				</div>
 				{/* Blue Circle */}
-				<div className="absolute -left-[45px] -bottom-2.5 md:bottom-[calc(1/60*100%)] -translate-1/2 w-8 h-8 md:w-10 md:h-10 bg-blue-300 rounded-full"></div>
+				<div className="absolute -left-[45px] -bottom-2.5 md:bottom-[calc(1/60*100%)] -translate-1/2 w-8 h-8 md:w-10 md:h-10 bg-[#b8dcffad] rounded-full"></div>
 				{/* Bottom Div */}
 				<div className="absolute bottom-1/10 -left-[45px] bg-white p-2.5 rounded-xl">
 					<div className="flex items-center gap-3">
 						<Award
-							className="bg-amber-400 text-white rounded-full p-1"
+							className="bg-amber-400 text-white rounded-full p-1 rotate-180"
 							size={30}
 						/>
 						<div>
@@ -96,7 +98,7 @@ export default function Hero() {
 							</p>
 						</div>
 					</div>
-					<div className="text-skblue text-[6.5px] md:text-[9px] flex gap-5 justify-between">
+					<div className="text-[#297CFD] text-[6.5px] md:text-[9px] flex gap-5 justify-between">
 						<p className="text-nowrap">Élèves qui réussissent</p>
 						<p>15.35%/yr</p>
 					</div>
