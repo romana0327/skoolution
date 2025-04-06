@@ -1,4 +1,4 @@
-import { Award } from "lucide-react";
+import { Award, GraduationCap, Send } from "lucide-react";
 import Button from "./ui/Button";
 
 export default function Hero() {
@@ -35,13 +35,13 @@ export default function Hero() {
 					src="/sk_images/student_one.png"
 					className="min-w-[200px] bg-linear-to-t from-skblue/40 via-white to-white rounded-full md:rounded-4xl px-8"
 				/>
-				<img
-					src="/sk_images/send.png"
-					className="absolute top-1/6 left-4 w-[20%] max-w-[70px]"
+				<Send
+					strokeWidth={1.25}
+					className="absolute top-1/6 -left-8 sm:left-0 text-skblue w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 p-2 sm:p-2.5 md:p-3"
 				/>
-				<img
-					src="/sk_images/hut.png"
-					className="absolute bottom-1/8 right-4 w-[20%] max-w-[70px]"
+				<GraduationCap
+					strokeWidth={1.25}
+					className="absolute bottom-1/12 sm:bottom-1/8 right-0 sm:right-4 text-white bg-skblue rounded-full w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-18 lg:h-18 p-2 sm:p-2.5 md:p-3"
 				/>
 				<div className="absolute -left-[45px] -bottom-2.5 md:bottom-[calc(1/60*100%)] -translate-1/2 w-8 h-8 md:w-10 md:h-10 bg-blue-300 rounded-full"></div>
 				<div className="absolute bottom-1/10 -left-[45px] bg-white p-2.5 rounded-xl">
