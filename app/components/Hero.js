@@ -1,3 +1,4 @@
+import { Award } from "lucide-react";
 import Button from "./ui/Button";
 
 export default function Hero() {
@@ -42,6 +43,25 @@ export default function Hero() {
 					src="/sk_images/hut.png"
 					className="absolute bottom-1/8 right-4 w-[20%] max-w-[70px]"
 				/>
+				<div className="absolute -left-[45px] -bottom-8 xxs:-bottom-3 md:bottom-[calc(1/60*100%)] -translate-1/2 w-8 h-8 md:w-10 md:h-10 bg-blue-300 rounded-full"></div>
+				<div className="absolute bottom-1/10 -left-[45px] bg-white p-2.5 rounded-xl">
+					<div className="flex items-center gap-3">
+						<Award
+							className="bg-amber-400 text-white rounded-full p-1"
+							size={30}
+						/>
+						<div>
+							<p className="text-[8px] md:text-[10.5px]">Counting</p>
+							<p className="text-[16px] md:text-[22px] font-semibold">
+								100,000+
+							</p>
+						</div>
+					</div>
+					<div className="text-skblue text-[6.5px] md:text-[9px] flex gap-5 justify-between">
+						<p className="text-nowrap">Élèves qui réussissent</p>
+						<p>15.35%/yr</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
