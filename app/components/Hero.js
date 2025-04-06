@@ -29,10 +29,10 @@ export default function Hero() {
 					/>
 				</div>
 			</div>
-			<div className="z-0 relative flex justify-center items-center ml-0 sm:-ml-10 md:ml-0 w-1/2 mt-0 sm:-mt-10 md:mt-0 sm:w-auto sm:h-auto rounded-full bg-linear-to-t px-8 from-skblue/40 via-white to-white">
+			<div className="z-0 relative flex justify-center items-center ml-0 sm:-ml-10 md:ml-0 w-1/2 mt-0 sm:-mt-10 md:mt-0 sm:w-auto sm:h-auto">
 				<img
 					src="/sk_images/student_one.png"
-					className="min-w-[200px] rounded-2xl"
+					className="min-w-[200px] bg-linear-to-t from-skblue/40 via-white to-white rounded-full md:rounded-4xl px-8"
 				/>
 				<img
 					src="/sk_images/send.png"
