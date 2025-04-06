@@ -2,7 +2,7 @@ import Button from "./ui/Button";
 
 export default function Hero() {
 	return (
-		<section className="w-full min-h-[calc(100vh-64px)] flex flex-col-reverse gap-5 sm:gap-0 sm:flex-row justify-center sm:justify-between py-5 md:py-0 items-center">
+		<section className="w-full min-h-[calc(100vh-64px)] flex flex-col-reverse gap-5 sm:gap-0 sm:flex-row justify-center sm:justify-between md:py-0 items-center">
 			<div className="z-10 flex flex-col gap-2 sm:gap-3">
 				<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold flex flex-col gap-2 sm:gap-4">
 					<p className="text-nowrap">Révisez intelligemment,</p>
