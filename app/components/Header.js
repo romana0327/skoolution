@@ -1,11 +1,11 @@
-import { AlignJustify } from "lucide-react";
+import { AlignJustify, X } from "lucide-react";
 import Button from "./ui/Button";
 
 export default function Header({ isOpenMenu, setIsOpenMenu }) {
 	return (
 		<section className="z-50 relative w-full flex justify-between items-center py-3 bg-white">
 			{/* Logo */}
-			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-bold">
+			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-semibold">
 				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue text-white">
 					sk
 				</span>
@@ -25,24 +25,35 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 				<a href="#">FAQ</a>
 			</nav>
 			{/* Login + Menu*/}
-			<div className="flex justify-center items-center gap-4">
+			<div className="flex justify-center items-center gap-6">
 				{/* Login */}
 				<Button href="#" color="text-white" bg="bg-skblue" text="Commencer" />
 				{/* Humberger Menu */}
-				<div className="lg:hidden">
+				<div className="lg:hidden relative">
 					<AlignJustify
-						className="cursor-pointer"
+						className={`cursor-pointer transition-all duration-300 absolute -translate-1/2 ${
+							!isOpenMenu ? "scale-100 rotate-0" : "scale-0 rotate-180"
+						}`}
+						size={28}
+						onClick={() => {
+							setIsOpenMenu(!isOpenMenu);
+						}}
+					/>
+					<X
+						className={`cursor-pointer transition-all duration-300 absolute -translate-1/2 ${
+							!isOpenMenu ? "scale-0 rotate-180" : "scale-100 rotate-0"
+						}`}
 						size={28}
 						onClick={() => {
 							setIsOpenMenu(!isOpenMenu);
 						}}
 					/>
 					<div
-						className={`w-full bg-white py-8 flex flex-col items-center absolute right-0 top-16 gap-9 transition-all duration-500 ${
+						className={`w-screen bg-white py-8 flex flex-col items-center absolute -right-8 top-5 gap-9 transition-all duration-500 ${
 							isOpenMenu
 								? "translate-x-0 opacity-100"
 								: "translate-x-[110%] opacity-100"
-						}  h-screen`}
+						}  h-dvh`}
 					>
 						<a
 							href="#"
