@@ -43,7 +43,7 @@ export default function Hero() {
 					src="/sk_images/hut.png"
 					className="absolute bottom-1/8 right-4 w-[20%] max-w-[70px]"
 				/>
-				<div className="absolute -left-[45px] -bottom-8 xxs:-bottom-3 md:bottom-[calc(1/60*100%)] -translate-1/2 w-8 h-8 md:w-10 md:h-10 bg-blue-300 rounded-full"></div>
+				<div className="absolute -left-[45px] -bottom-2.5 md:bottom-[calc(1/60*100%)] -translate-1/2 w-8 h-8 md:w-10 md:h-10 bg-blue-300 rounded-full"></div>
 				<div className="absolute bottom-1/10 -left-[45px] bg-white p-2.5 rounded-xl">
 					<div className="flex items-center gap-3">
 						<Award
