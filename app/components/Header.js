@@ -50,10 +50,10 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					/>
 					{/* List Menu */}
 					<div
-						className={`w-screen bg-white py-8 flex flex-col items-center absolute right-0 top-5 gap-9 transition-all duration-500 ${
+						className={`w-screen bg-white py-8 flex flex-col items-center absolute -right-5 top-5 gap-9 transition-all duration-500 ${
 							isOpenMenu
 								? "translate-x-0 opacity-100"
-								: "translate-x-[110%] opacity-100"
+								: "translate-x-[100%] opacity-100"
 						}  h-dvh`}
 					>
 						<a
