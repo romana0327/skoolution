@@ -11,7 +11,7 @@ export default function Home() {
 				isOpenMenu && "overflow-y-hidden"
 			}`}
 		>
-			<div className="w-full px-5 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px]">
+			<div className="w-full px-5 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px] text-[#1D1D1B]">
 				<Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
 				<Hero />
 			</div>

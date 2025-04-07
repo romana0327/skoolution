@@ -15,7 +15,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 			<nav className="hidden lg:flex gap-[38px]">
 				<a
 					href="#"
-					className="relative font-semibold text-skblue before:absolute before:bottom-0 before:w-[calc(100%+10px)] before:-left-[5px] before:h-0.5 before:bg-skblue"
+					className="relative font-semibold text-skblue before:absolute before:-bottom-1 before:w-[calc(100%)] before:-left-[0px] before:h-0.5 before:bg-skblue"
 				>
 					Accueil
 				</a>
