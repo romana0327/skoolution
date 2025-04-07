@@ -7,7 +7,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 			{/* Logo */}
 			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-semibold">
 				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue text-white">
-					sk
+					SK
 				</span>
 				<span className="text-skblue hidden sm:inline-block">oolution</span>
 			</div>
