@@ -3,10 +3,10 @@ import Button from "./ui/Button";
 
 export default function Hero() {
 	return (
-		<section className="w-full h-[calc(100dvh-64px)] flex flex-col-reverse gap-5 sm:gap-0 sm:flex-row justify-center sm:justify-between items-center">
+		<section className="w-full h-[calc(100dvh-64px)] flex flex-col-reverse gap-12 sm:gap-0 sm:flex-row justify-center sm:justify-between items-center">
 			{/* Left Section */}
-			<div className="z-10 flex flex-col gap-5">
-				{/* Container 1 */}
+			<div className="z-10 flex flex-col gap-4 sm:gap-6">
+				{/* First */}
 				<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold flex flex-col gap-2">
 					<p className="text-nowrap">Révisez intelligemment,</p>
 					<p className="text-nowrap">progressez rapidement</p>
@@ -14,35 +14,28 @@ export default function Hero() {
 						avec <span className="text-skblue">Skoolution.</span>
 					</p>
 				</h2>
-				{/* Container 2 */}
-				<div className="flex flex-col gap-3">
-					{/* First */}
+				{/* Second */}
+				<div className="flex flex-col gap-2">
 					<p className="text-[#848484] block w-full sm:w-7/8 md:w-5/6">
 						Bienvenue sur SKOOLUTION, la plateforme d’évaluation en ligne pour
 						les lycéens au Maroc.
 					</p>
-					{/* Second */}
 					<div className="flex items-center  gap-2">
 						<img src="/morocco.png" alt="Moroccan Flag" />
 						<p className="text-[#848484] text-[14px]">
 							Programme officiel 2024-2025
 						</p>
 					</div>
-					{/* Third */}
-					<div className="flex gap-3">
-						<Button
-							href="#"
-							color="text-white"
-							bg="bg-skblue"
-							text="Commencer"
-						/>
-						<Button
-							href="#"
-							color="text-skblue"
-							bg="bg-white"
-							text="Testez gratuitement"
-						/>
-					</div>
+				</div>
+				{/* Third */}
+				<div className="flex gap-3">
+					<Button href="#" color="text-white" bg="bg-skblue" text="Commencer" />
+					<Button
+						href="#"
+						color="text-skblue"
+						bg="bg-white"
+						text="Testez gratuitement"
+					/>
 				</div>
 			</div>
 			{/* Right Section */}
@@ -50,7 +43,7 @@ export default function Hero() {
 				<img
 					src="/SK/student.png"
 					alt="Student"
-					className="w-3/4 min-[460px]:w-2/3 sm:w-full md:w-3/4"
+					className="w-7/8 min-[460px]:w-2/3 sm:w-full md:w-3/4"
 				/>
 			</div>
 		</section>
