@@ -3,7 +3,12 @@ import Button from "./ui/Button";
 
 export default function Hero() {
 	return (
-		<section className="w-full h-[calc(100dvh-64px)] flex flex-col-reverse gap-9 sm:gap-0 sm:flex-row justify-center sm:justify-between items-center">
+		<section
+			className="
+			w-full px-5 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px] 
+			h-[calc(100dvh-64px)] flex flex-col-reverse gap-9 sm:gap-0 sm:flex-row 
+			justify-center sm:justify-between items-center"
+		>
 			{/* Left Section */}
 			<div className="z-10 flex flex-col gap-4 sm:gap-6">
 				{/* First */}

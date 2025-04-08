@@ -3,9 +3,13 @@ import Button from "./ui/Button";
 
 export default function Header({ isOpenMenu, setIsOpenMenu }) {
 	return (
-		<section className="z-50 relative w-full flex justify-between items-center py-3 bg-white">
+		<section
+			className="
+		w-full px-5 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px]
+		z-50 relative flex justify-between items-center py-3 bg-white"
+		>
 			{/* Logo */}
-			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-semibold">
+			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-semibold uppercase">
 				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue text-white">
 					SK
 				</span>
