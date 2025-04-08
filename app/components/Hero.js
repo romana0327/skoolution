@@ -10,9 +10,9 @@ export default function Hero() {
 			justify-center sm:justify-between items-center"
 		>
 			{/* Left Section */}
-			<div className="z-10 flex flex-col gap-3 sm:gap-6">
+			<div className="z-10 flex flex-col gap-2 sm:gap-6">
 				{/* First */}
-				<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold flex flex-col gap-2">
+				<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold flex flex-col gap-1 sm:gap-2 ">
 					<p className="text-nowrap">Révisez intelligemment,</p>
 					<p className="text-nowrap">progressez rapidement</p>
 					<p className="text-nowrap">
