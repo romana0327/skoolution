@@ -6,11 +6,11 @@ export default function Hero() {
 		<section
 			className="
 			w-full px-5 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px] 
-			h-[calc(100dvh-64px)] flex flex-col-reverse gap-9 sm:gap-0 sm:flex-row 
+			h-[calc(100dvh-64px)] flex flex-col-reverse gap-6 sm:gap-0 sm:flex-row 
 			justify-center sm:justify-between items-center"
 		>
 			{/* Left Section */}
-			<div className="z-10 flex flex-col gap-4 sm:gap-6">
+			<div className="z-10 flex flex-col gap-3 sm:gap-6">
 				{/* First */}
 				<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold flex flex-col gap-2">
 					<p className="text-nowrap">Révisez intelligemment,</p>

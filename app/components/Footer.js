@@ -47,7 +47,7 @@ export default function Footer() {
 						</div>
 					</div>
 				</div>
-				<div className="py-9">
+				<div className="py-10">
 					<p>© {new Date().getFullYear()} Skoolution. Tous droits réservés.</p>
 				</div>
 			</div>
