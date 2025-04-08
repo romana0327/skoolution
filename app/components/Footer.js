@@ -40,10 +40,18 @@ export default function Footer() {
 							Réseaux sociaux
 						</h3>
 						<div className="flex gap-5">
-							<Mail size={20} />
-							<Linkedin size={20} />
-							<Instagram size={20} />
-							<Facebook size={20} />
+							<a href="#">
+								<Mail size={20} />
+							</a>
+							<a href="#">
+								<Linkedin size={20} />
+							</a>
+							<a href="#">
+								<Instagram size={20} />
+							</a>
+							<a href="#">
+								<Facebook size={20} />
+							</a>
 						</div>
 					</div>
 				</div>
