@@ -1,5 +1,7 @@
-import { AlignJustify, X } from "lucide-react";
+import { AlignJustify, LogIn, Sun, X } from "lucide-react";
 import Button from "./ui/Button";
+import ChooseLanguage from "./ui/ChooseLanguage";
+import Mode from "./ui/Mode";
 
 export default function Header({ isOpenMenu, setIsOpenMenu }) {
 	return (
@@ -16,7 +18,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 				<span className="text-skblue hidden sm:inline-block">oolution</span>
 			</div>
 			{/* Navbar */}
-			<nav className="hidden lg:flex gap-[38px]">
+			<nav className="hidden lg:flex gap-[38px] lg:gap-5 xl:gap-[38px]">
 				<a
 					href="#"
 					className="relative font-semibold text-skblue before:absolute before:-bottom-1 before:w-[calc(100%)] before:-left-[0px] before:h-0.5 before:bg-skblue"
@@ -26,16 +28,34 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 				<a href="#">Services</a>
 				<a href="#">Fonctionnalité</a>
 				<a href="#">Témoignage</a>
-				<a href="#">FAQ</a>
+				{/* <a href="#">FAQ</a> */}
 			</nav>
 			{/* Login + Menu*/}
-			<div className="flex justify-center items-center gap-6">
-				{/* Login */}
-				<Button href="#" color="text-white" bg="bg-skblue" text="Commencer" />
+			<div className="flex justify-center items-center">
+				{/* Lang + Mode + Login */}
+				<div className="flex gap-2">
+					<ChooseLanguage />
+					<Mode />
+					{/* Login */}
+					<div className="hidden sm:flex">
+						<Button
+							href="#"
+							color="text-white"
+							bg="bg-skblue"
+							text="Commencer"
+						/>
+					</div>
+					<a
+						href="#"
+						className="flex sm:hidden border cursor-pointer dark:border-gray-500 border-gray-400 p-2.5 rounded-full  hover:dark:bg-white/15 hover:bg-neutral-200/80 dark:bg-white/10 bg-neutral-200/40 "
+					>
+						<LogIn size={20} strokeWidth={2} className="text-skblue" />
+					</a>
+				</div>
 				{/* Humberger Menu */}
-				<div className="lg:hidden relative">
+				<div className="lg:hidden relative w-[41px]">
 					<AlignJustify
-						className={`cursor-pointer transition-all duration-300 absolute -translate-1/2 ${
+						className={`cursor-pointer transition-all duration-300 absolute right-0 -translate-y-1/2 ${
 							!isOpenMenu ? "scale-100 rotate-0" : "scale-0 rotate-180"
 						}`}
 						size={28}
@@ -44,7 +64,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 						}}
 					/>
 					<X
-						className={`cursor-pointer transition-all duration-300 absolute -translate-1/2 ${
+						className={`cursor-pointer transition-all duration-300 absolute right-0 -translate-y-1/2 ${
 							!isOpenMenu ? "scale-0 rotate-180" : "scale-100 rotate-0"
 						}`}
 						size={28}
@@ -54,11 +74,11 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					/>
 					{/* List Menu */}
 					<div
-						className={`w-screen bg-white py-8 flex flex-col items-center absolute -right-5 top-5 gap-9 transition-all duration-500 ${
+						className={`w-screen bg-white py-8 flex flex-col items-center absolute -right-5 top-8 gap-9 transition-all duration-500 ${
 							isOpenMenu
 								? "translate-x-0 opacity-100"
 								: "translate-x-[100%] opacity-100"
-						}  h-dvh`}
+						} h-screen `}
 					>
 						<a
 							href="#"
