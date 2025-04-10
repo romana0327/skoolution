@@ -7,5 +7,5 @@
 	--color-skblack: #1d1d1b;
 	--font-poppins: "Poppins", sans-serif;
 	--font-inter: "Inter", sans-serif;
-	--breakpoint-xxs: 23.5rem;
+	--breakpoint-xxs: 23.5rem; /*(376px)*/
 }
