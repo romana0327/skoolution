@@ -47,7 +47,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					</div>
 					<a
 						href="#"
-						className="flex sm:hidden border cursor-pointer dark:border-gray-500 border-gray-400 p-2.5 rounded-full  hover:dark:bg-white/15 hover:bg-neutral-200/80 dark:bg-white/10 bg-neutral-200/40 "
+						className="flex sm:hidden border cursor-pointer  border-gray-400 p-2.5 rounded-full  hover:bg-neutral-100 bg-neutral-50"
 					>
 						<LogIn size={20} strokeWidth={2} className="text-skblue" />
 					</a>
