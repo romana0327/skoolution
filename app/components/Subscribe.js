@@ -15,9 +15,9 @@ export default function Subscribe() {
 						className="w-full bg-white placeholder:text-neutral-500 placeholder:pl-6 outline-0 border-0 text-skblack p-5"
 					/>
 					<Mail
-						size={32}
+						size={24}
 						strokeWidth={1.25}
-						className="absolute left-2 top-1/2 -translate-y-1/2 text-neutral-500"
+						className="absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-500"
 					/>
 					<button
 						type="button"

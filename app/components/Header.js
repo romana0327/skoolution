@@ -8,7 +8,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 		<section
 			className="
 		w-full px-5 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px]
-		z-50 relative flex justify-between items-center py-3 bg-white"
+		z-50 relative flex justify-between items-center py-3"
 		>
 			{/* Logo */}
 			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-semibold uppercase">

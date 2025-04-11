@@ -40,16 +40,22 @@ export default function Footer() {
 							Réseaux sociaux
 						</h3>
 						<div className="flex gap-5">
-							<a href="#">
+							<a href="mailto:contact@skoolution.com">
 								<Mail size={20} />
 							</a>
-							<a href="#">
+							<a
+								href="https://www.linkedin.com/company/skoolution/"
+								target="_blank"
+							>
 								<Linkedin size={20} />
 							</a>
-							<a href="#">
+							<a href="https://www.instagram.com/skoolution/" target="_blank">
 								<Instagram size={20} />
 							</a>
-							<a href="#">
+							<a
+								href="https://www.facebook.com/people/Skoolution/61565846353427/"
+								target="_blank"
+							>
 								<Facebook size={20} />
 							</a>
 						</div>

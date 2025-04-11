@@ -26,7 +26,7 @@ export default function ChooseLanguage() {
 				onClick={() => {
 					setIsOpen(!isOpen);
 				}}
-				className="flex justify-center items-center cursor-pointer gap-2 py-2 px-3 rounded-2xl border border-gray-400 hover:bg-neutral-100 bg-neutral-50 "
+				className="flex justify-center items-center cursor-pointer gap-2 py-2 px-3 rounded-2xl border border-gray-400 dark:hover:bg-neutral-700 hover:bg-neutral-100 dark:bg-neutral-800 bg-neutral-50 "
 			>
 				<Flag
 					code={selectedLanguage.code}
@@ -59,8 +59,7 @@ export default function ChooseLanguage() {
 								className="w-6"
 								alt={`${lang.label} Flage`}
 							/>
-							<span className="hidden sm:inline-block">{lang.label}</span>
-							<span className="sm:hidden">{lang.label.substring(0, 2)}</span>
+							<span>{lang.label}</span>
 						</button>
 					))}
 				</div>
