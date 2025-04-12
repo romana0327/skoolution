@@ -2,7 +2,7 @@ import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
 	return (
-		<section className="bg-[#1D1D1B] text-white/70 w-full flex justify-center px-5 xl:px-0 pt-16 text-[14px] lg:text-[16px]">
+		<section className="bg-skblack text-white/70 w-full flex justify-center px-5 xl:px-0 pt-16 text-[14px] lg:text-[16px]">
 			<div className="flex flex-col text-center sm:text-start w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				<div className="flex flex-col sm:flex-row items-center sm:items-start gap-10 sm:gap-20 lg:gap-40">
 					{/* Column 1 */}
