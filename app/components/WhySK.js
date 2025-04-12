@@ -3,12 +3,14 @@ import Button from "./ui/Button";
 
 export default function WhySK() {
 	return (
-		<section className="bg-skblue-second w-full flex justify-center px-5 xl:px-0 py-16 text-[14px] lg:text-[16px] min-h-screen">
-			<div className="flex flex-col justify-between items-center gap-5 sm:gap-3 md:gap-10 sm:flex-row w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
+		<section className="bg-skblue-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen">
+			<div className="flex flex-col  sm:flex-row justify-between items-center gap-0 sm:gap-3 md:gap-10 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Left Column */}
-				<div className="relative flex flex-col items-center w-7/8 min-[460px]:w-2/3 sm:w-full  md:w-2/4 lg:max-w-[350px]">
-					<img src="/SK/student_22.png" alt="Student 2" />
-				</div>
+				<img
+					src="/SK/student_22.png"
+					alt="Student 2"
+					className="max-w-[350px] w-2/3 min-[460px]:w-2/3 sm:w-1/2  md:w-2/4  -mb-5 sm:-mb-0"
+				/>
 				{/* Right Column */}
 				<div className="flex flex-col gap-6">
 					<div className="flex flex-col gap-4">
@@ -19,7 +21,7 @@ export default function WhySK() {
 							La plateforme qui s'adapte à vos besoins pour améliorer vos notes
 						</p>
 					</div>
-					<div className="grid grid-cols-2 gap-5 min-[500px]:gap-18 sm:gap-10 xl:gap-x-24 gap-y-12">
+					<div className="grid grid-cols-2 gap-10">
 						{/* First */}
 						<div className="flex flex-col gap-4">
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
