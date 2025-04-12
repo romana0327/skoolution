@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Subscribe from "./components/Subscribe";
 import WhySK from "./components/WhySK";
+import OffreSK from "./components/OffreSK";
 
 export default function Home() {
 	const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -17,6 +18,7 @@ export default function Home() {
 			<Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
 			<Hero />
 			<WhySK />
+			<OffreSK />
 			<Subscribe />
 			<Footer />
 		</section>
