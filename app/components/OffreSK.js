@@ -18,7 +18,7 @@ export default function OffreSK() {
 				</p>
 			</div>
 			{/* Right Section */}
-			<div className="w-2/3 sm:w-1/2  flex flex-row-reverse justify-center sm:justify-start">
+			<div className="w-full min-[500px]:w-2/3 sm:w-1/2  flex flex-row-reverse justify-center sm:justify-start">
 				<img src="/SK/student_3.png" alt="Student" className="w-full" />
 			</div>
 		</section>
