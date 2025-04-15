@@ -29,7 +29,7 @@ export default function OffreSK() {
 			{/* Right Section */}
 			<div className="w-full min-[500px]:w-2/3 sm:w-1/2  flex flex-row-reverse justify-center sm:justify-start">
 				<img
-					src="/SK/student_3.webp"
+					src="/sk/student_3.webp"
 					alt="Student"
 					className="w-full -mb-0 sm:-mb-6"
 				/>

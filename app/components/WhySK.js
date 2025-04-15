@@ -7,7 +7,7 @@ export default function WhySK() {
 			<div className="flex flex-col  sm:flex-row justify-between items-center gap-0 sm:gap-3 md:gap-10 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Left Column */}
 				<img
-					src="/SK/student_2.webp"
+					src="/sk/student_2.webp"
 					alt="Student 2"
 					className="max-w-[350px] w-2/3 min-[460px]:w-2/3 sm:w-1/2  md:w-2/4  -mb-5 sm:-mb-0"
 				/>

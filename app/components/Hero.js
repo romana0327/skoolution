@@ -46,7 +46,7 @@ export default function Hero() {
 			{/* Right Section */}
 			<div className="flex flex-row-reverse justify-center sm:justify-start">
 				<img
-					src="/SK/student_1.webp"
+					src="/sk/student_1.webp"
 					alt="Student"
 					className="w-7/8 min-[460px]:w-2/3 sm:w-full md:w-3/4"
 				/>
