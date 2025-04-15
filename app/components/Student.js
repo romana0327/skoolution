@@ -3,7 +3,7 @@ export default function Student() {
 		<div className="z-0 relative flex justify-center items-center ml-0 sm:-ml-10 md:ml-0 w-1/2 mt-0 sm:-mt-10 md:mt-0 sm:w-auto sm:h-auto">
 			{/* Student */}
 			<img
-				src="/sk_images/student_one.png"
+				src="/sk_images/student_one.webp"
 				className="min-w-[200px] bg-linear-to-t from-skblue/40 via-white to-white rounded-full md:rounded-4xl px-8"
 			/>
 			{/* Send */}
@@ -23,14 +23,14 @@ export default function Student() {
 					<div>
 						<div className="absolute top-5 lg:top-10 left-1/5 w-full">
 							<img
-								src="/sk_images/Ellipse_blue.png"
+								src="/sk_images/Ellipse_blue.webp"
 								alt="Blue Circle"
 								className=" w-[60%]"
 							/>
 						</div>
 						<div className="absolute top-5 lg:top-10 left-1/5 w-full">
 							<img
-								src="/sk_images/Ellipse_orange.png"
+								src="/sk_images/Ellipse_orange.webp"
 								alt="Orange Circle"
 								className=" w-[55%]"
 							/>

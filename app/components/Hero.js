@@ -26,7 +26,7 @@ export default function Hero() {
 						les lycéens au Maroc.
 					</p>
 					<div className="flex items-center  gap-2">
-						<img src="/morocco.png" alt="Moroccan Flag" />
+						<img src="/morocco.webp" alt="Moroccan Flag" />
 						<p className="text-skblack-second text-[14px]">
 							Programme officiel 2024-2025
 						</p>
@@ -46,7 +46,7 @@ export default function Hero() {
 			{/* Right Section */}
 			<div className="flex flex-row-reverse justify-center sm:justify-start">
 				<img
-					src="/SK/student_1.png"
+					src="/SK/student_1.webp"
 					alt="Student"
 					className="w-7/8 min-[460px]:w-2/3 sm:w-full md:w-3/4"
 				/>

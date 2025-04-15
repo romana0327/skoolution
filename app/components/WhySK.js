@@ -7,7 +7,7 @@ export default function WhySK() {
 			<div className="flex flex-col  sm:flex-row justify-between items-center gap-0 sm:gap-3 md:gap-10 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Left Column */}
 				<img
-					src="/SK/student_2.png"
+					src="/SK/student_2.webp"
 					alt="Student 2"
 					className="max-w-[350px] w-2/3 min-[460px]:w-2/3 sm:w-1/2  md:w-2/4  -mb-5 sm:-mb-0"
 				/>
@@ -21,7 +21,7 @@ export default function WhySK() {
 							La plateforme qui s'adapte à vos besoins pour améliorer vos notes
 						</p>
 					</div>
-					<div className="grid grid-cols-2 gap-10">
+					<div className="grid grid-cols-2 gap-5 sm:gap-10">
 						{/* First */}
 						<div className="flex flex-col gap-4">
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
@@ -38,10 +38,10 @@ export default function WhySK() {
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
 								<FlaskConical />
 							</div>
-							<h3 className="font-bold">Suivi personnalisé</h3>
+							<h3 className="font-bold">Rapports de progression</h3>
 							<p className="text-skblack-second -my-1.5 max-w-[300px]">
-								Des tests qui s'adaptent à ton niveau et te guident étape par
-								étape.
+								Identifie tes points faibles et améliore tes compétences grâce à
+								un suivi en temps réel.
 							</p>
 						</div>
 						{/* Third */}
@@ -49,10 +49,10 @@ export default function WhySK() {
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
 								<FlaskConical />
 							</div>
-							<h3 className="font-bold">Suivi personnalisé</h3>
+							<h3 className="font-bold">Programme officiel marocain</h3>
 							<p className="text-skblack-second -my-1.5 max-w-[300px]">
-								Des tests qui s'adaptent à ton niveau et te guident étape par
-								étape.
+								Des contenus alignés sur les référentiels du Ministère de
+								l'Éducation.
 							</p>
 						</div>
 						{/* Fourth */}
@@ -60,10 +60,10 @@ export default function WhySK() {
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
 								<FlaskConical />
 							</div>
-							<h3 className="font-bold">Suivi personnalisé</h3>
+							<h3 className="font-bold">Flexibilité</h3>
 							<p className="text-skblack-second -my-1.5 lg:max-w-[300px]">
-								Des tests qui s'adaptent à ton niveau et te guident étape par
-								étape.
+								Révisez quand vous voulez, où vous voulez, sur tous vos
+								appareils.
 							</p>
 						</div>
 					</div>

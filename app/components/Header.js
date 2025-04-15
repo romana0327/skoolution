@@ -12,10 +12,12 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 		>
 			{/* Logo */}
 			<div className=" font-poppins text-2xl sm:text-3xl flex justify-center items-center gap-1 tracking-wide font-semibold uppercase">
-				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue text-white">
+				<span className="flex justify-center items-center px-3.5 h-[40px] bg-skblue dark:bg-white dark:text-skblue text-white">
 					SK
 				</span>
-				<span className="text-skblue hidden sm:inline-block">oolution</span>
+				<span className="text-skblue dark:text-white hidden sm:inline-block">
+					oolution
+				</span>
 			</div>
 			{/* Navbar */}
 			<nav className="hidden lg:flex gap-[38px] lg:gap-5 xl:gap-[38px]">
