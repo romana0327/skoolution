@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
 	--color-skblue: #054bb4;
-	--color-skblue-second: #eaeff8;
+	--color-skblue-second: #054bb40f;
 	--color-skblue-third: #054bb41a;
 	--color-skblack: #1d1d1b;
 	--color-skblack-second: #606176;
