@@ -53,7 +53,7 @@ export default function SwiperComponents() {
 									<p className="text-sm text-skgray dark:text-skgray-second">
 										Élève
 									</p>
-									<p className="mt-1 -ml-1 font-semibold">⭐ 3.9</p>
+									<p className="mt-1 -ml-1 font-semibold">⭐ 4.9</p>
 								</div>
 							</div>
 							<p className="text-skgray dark:text-skgray-second text-sm line-clamp-3 h-[60px]">

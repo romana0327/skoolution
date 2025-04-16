@@ -1,4 +1,4 @@
-import { FlaskConical } from "lucide-react";
+import { ChartNoAxesCombined, Gauge, ListTodo, SquarePen } from "lucide-react";
 import Button from "./ui/Button";
 
 export default function Functionality() {
@@ -31,8 +31,8 @@ export default function Functionality() {
 					<div className="flex flex-col gap-5">
 						{/* First */}
 						<div className="flex items-center gap-5">
-							<div className="bg-skblue-third w-fit p-4 sm:p-7 text-skblue rounded-sm">
-								<FlaskConical />
+							<div className="bg-skblue-third w-fit p-3 sm:p-6 text-skblue rounded-sm">
+								<Gauge size={30} />
 							</div>
 							<div className="flex flex-col justify-center gap-1">
 								<h3 className="font-semibold text-md">
@@ -46,8 +46,8 @@ export default function Functionality() {
 						</div>
 						{/* Second */}
 						<div className="flex items-center gap-5">
-							<div className="bg-skblue-third w-fit  p-4 sm:p-7 text-skblue rounded-sm">
-								<FlaskConical />
+							<div className="bg-skblue-third w-fit  p-3 sm:p-6 text-skblue rounded-sm">
+								<ListTodo size={30} />
 							</div>
 							<div className="flex flex-col justify-center gap-1">
 								<h3 className="font-semibold text-md">
@@ -61,8 +61,8 @@ export default function Functionality() {
 						</div>
 						{/* Third */}
 						<div className="flex items-center gap-5">
-							<div className="bg-skblue-third w-fit  p-4 sm:p-7 text-skblue rounded-sm">
-								<FlaskConical />
+							<div className="bg-skblue-third w-fit  p-3 sm:p-6 text-skblue rounded-sm">
+								<SquarePen size={30} />
 							</div>
 							<div className="flex flex-col justify-center gap-1">
 								<h3 className="font-semibold text-md">
@@ -76,8 +76,8 @@ export default function Functionality() {
 						</div>
 						{/* Fourth */}
 						<div className="flex items-center gap-5">
-							<div className="bg-skblue-third w-fit  p-4 sm:p-7 text-skblue rounded-sm">
-								<FlaskConical />
+							<div className="bg-skblue-third w-fit  p-3 sm:p-6 text-skblue rounded-sm">
+								<ChartNoAxesCombined size={30} />
 							</div>
 							<div className="flex flex-col justify-center gap-1">
 								<h3 className="font-semibold text-md">Suivi visuel précis.</h3>
