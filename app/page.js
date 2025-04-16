@@ -9,6 +9,7 @@ import OffreSK from "./components/OffreSK";
 import Functionality from "./components/Functionality";
 import Testimony from "./components/Testimony";
 import Faqs from "./components/Faqs";
+import Steps from "./components/Steps";
 
 export default function Home() {
 	const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -23,7 +24,7 @@ export default function Home() {
 			<WhySK />
 			<OffreSK />
 			<Functionality />
-			<div className="h-screen"></div>
+			<Steps />
 			<Testimony />
 			<Faqs />
 			<Subscribe />
