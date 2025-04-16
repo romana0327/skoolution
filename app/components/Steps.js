@@ -106,7 +106,7 @@ export default function Steps() {
 			</div>
 			{/* Bottom Section */}
 			<Button
-				href="#"
+				href="/login"
 				color="text-white"
 				bg="bg-skblue"
 				text="Testez gratuitement"

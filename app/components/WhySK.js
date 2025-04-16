@@ -3,7 +3,10 @@ import Button from "./ui/Button";
 
 export default function WhySK() {
 	return (
-		<section className="bg-skblue-second dark:bg-skblack-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen">
+		<section
+			id="services"
+			className="bg-skblue-second dark:bg-skblack-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen"
+		>
 			<div className="flex flex-col  sm:flex-row justify-between items-center gap-0 sm:gap-3 md:gap-10 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Left Column */}
 				<img
@@ -73,6 +76,7 @@ export default function WhySK() {
 						</div>
 					</div>
 					<Button
+						href="#fonctionnalité"
 						text="voir plus"
 						bg="bg-white"
 						color="text-skblue"

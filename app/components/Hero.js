@@ -4,6 +4,7 @@ import Button from "./ui/Button";
 export default function Hero() {
 	return (
 		<section
+			id="accueil"
 			className="
 			w-full px-5 py-10 xl:px-0 lg:w-11/12 xl:w-10/12 max-w-[1260px] 
 			min-h-[calc(100dvh-64px)] flex flex-col-reverse gap-6 sm:gap-0 sm:flex-row 
@@ -34,9 +35,14 @@ export default function Hero() {
 				</div>
 				{/* Third */}
 				<div className="flex gap-3">
-					<Button href="#" color="text-white" bg="bg-skblue" text="Commencer" />
 					<Button
-						href="#"
+						href="/login"
+						color="text-white"
+						bg="bg-skblue"
+						text="Commencer"
+					/>
+					<Button
+						href="/login"
 						color="text-skblue"
 						bg="bg-white"
 						text="Testez gratuitement"

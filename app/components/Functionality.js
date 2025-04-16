@@ -3,7 +3,10 @@ import Button from "./ui/Button";
 
 export default function Functionality() {
 	return (
-		<section className="bg-skblue-second dark:bg-skblack-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen">
+		<section
+			id="fonctionnalité"
+			className="bg-skblue-second dark:bg-skblack-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen"
+		>
 			<div className="flex flex-col sm:flex-row justify-between items-center gap-10 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Left Column */}
 				<div className="w-full min-[500px]:w-2/3 sm:w-1/2  flex flex-row-reverse justify-center sm:justify-start">
@@ -89,7 +92,7 @@ export default function Functionality() {
 						</div>
 					</div>
 					<Button
-						href="#"
+						href="/login"
 						color="text-white"
 						bg="bg-skblue"
 						text="Commencer"
