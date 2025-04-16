@@ -12,7 +12,7 @@ export default function Steps() {
 				<h2 className="text-4xl md:text-5xl font-bold">
 					Comment <span className="text-skblue">ça marche ?</span>
 				</h2>
-				<p className="text-skblack-second">
+				<p className="text-skgray dark:text-skgray-second ">
 					Comprenez en quelques étapes comment profiter pleinement de nos
 					services.
 				</p>
@@ -20,12 +20,12 @@ export default function Steps() {
 			{/* Center Section */}
 			<div className="grid grid-cols-1 min-[640px]:grid-cols-2 min-[1200px]:grid-cols-12 gap-x-24 gap-y-[156px]">
 				{/* first */}
-				<div className="relative min-[1200px]:col-span-4 flex flex-col items-center text-center bg-white shadow-lg p-5 pt-20 gap-3 border border-skblack-second/3">
+				<div className="relative min-[1200px]:col-span-4 flex flex-col items-center text-center bg-white dark:bg-skblack-second shadow-lg p-5 pt-20 gap-3 border border-skgray/3">
 					<p className="font-semibold">Inscription gratuite</p>
-					<p className="text-skblack-second text-sm">
+					<p className="text-skgray dark:text-skgray-second  -second text-sm">
 						Créez votre compte en 2 minutes avec un formulaire simple.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						01
 					</div>
 					{/* Start Horizontal Arrow */}
@@ -38,13 +38,13 @@ export default function Steps() {
 					{/* End Vertical Arrow */}
 				</div>
 				{/* Second */}
-				<div className="relative min-[1200px]:col-span-4 flex flex-col items-center text-center bg-white shadow-lg p-5 pt-20 gap-3 border border-skblack-second/3">
+				<div className="relative min-[1200px]:col-span-4 flex flex-col items-center text-center bg-white dark:bg-skblack-second shadow-lg p-5 pt-20 gap-3 border border-skgray/3">
 					<p className="font-semibold">Test de diagnostic</p>
-					<p className="text-skblack-second text-sm">
+					<p className="text-skgray dark:text-skgray-second  text-sm">
 						Identifiez vos points forts et à améliorer pour personnaliser votre
 						apprentissage.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						02
 					</div>
 					{/* Start Horizontal Arrows */}
@@ -57,12 +57,12 @@ export default function Steps() {
 					{/* End Vertical Arrow */}
 				</div>
 				{/* Third */}
-				<div className="relative min-[1200px]:col-span-4 flex flex-col items-center text-center bg-white shadow-lg p-5 pt-20 gap-3 border border-skblack-second/3">
+				<div className="relative min-[1200px]:col-span-4 flex flex-col items-center text-center bg-white dark:bg-skblack-second shadow-lg p-5 pt-20 gap-3 border border-skgray/3">
 					<p className="font-semibold">Plan personnalisé</p>
-					<p className="text-skblack-second text-sm">
+					<p className="text-skgray dark:text-skgray-second  text-sm">
 						Recevez un programme de révision personnalisé selon vos besoins.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						03
 					</div>
 					{/* Start Horizontal Arrows */}
@@ -75,12 +75,12 @@ export default function Steps() {
 					{/* End Vertical Arrow */}
 				</div>
 				{/* Fourth */}
-				<div className="relative min-[1200px]:col-span-4 min-[1200px]:col-start-3 flex flex-col items-center text-center bg-white shadow-lg p-5 pt-20 gap-3 border border-skblack-second/3">
+				<div className="relative min-[1200px]:col-span-4 min-[1200px]:col-start-3 flex flex-col items-center text-center bg-white dark:bg-skblack-second shadow-lg p-5 pt-20 gap-3 border border-skgray/3">
 					<p className="font-semibold">Suivi des progrès</p>
-					<p className="text-skblack-second text-sm">
+					<p className="text-skgray dark:text-skgray-second  text-sm">
 						Consultez vos résultats instantanément pour suivre vos progrès.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						04
 					</div>
 					{/* Start Horizontal Arrows */}
@@ -93,13 +93,13 @@ export default function Steps() {
 					{/* End Vertical Arrow */}
 				</div>
 				{/* Fifth */}
-				<div className="relative min-[1200px]:col-span-4 min-[1200px]:col-start-7 flex flex-col items-center text-center bg-white shadow-lg p-5 pt-20 gap-3 border border-skblack-second/3">
+				<div className="relative min-[1200px]:col-span-4 min-[1200px]:col-start-7 flex flex-col items-center text-center bg-white dark:bg-skblack-second shadow-lg p-5 pt-20 gap-3 border border-skgray/3">
 					<p className="font-semibold">Améliorez-vous</p>
-					<p className="text-skblack-second text-sm">
+					<p className="text-skgray dark:text-skgray-second  text-sm">
 						Répétez les révisions jusqu’à l’évaluation finale pour suivre vos
 						progrès.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						05
 					</div>
 				</div>
@@ -110,7 +110,7 @@ export default function Steps() {
 				color="text-white"
 				bg="bg-skblue"
 				text="Testez gratuitement"
-				addStyle="w-fit mx-auto"
+				addStyle="mx-auto w-full sm:w-60"
 			/>
 		</section>
 	);

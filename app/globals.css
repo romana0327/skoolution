@@ -7,7 +7,9 @@
 	--color-skblue-second: #054bb40f;
 	--color-skblue-third: #054bb41a;
 	--color-skblack: #1d1d1b;
-	--color-skblack-second: #606176;
+	--color-skblack-second: #ddeaff0f;
+	--color-skgray: #606176;
+	--color-skgray-second: #d3d3d3;
 	--font-poppins: "Poppins", sans-serif;
 	--font-inter: "Inter", sans-serif;
 	--breakpoint-xxs: 23.5rem; /*(376px)*/

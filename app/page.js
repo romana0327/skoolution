@@ -17,7 +17,7 @@ export default function Home() {
 		<section
 			className={`w-full flex flex-col items-center overflow-x-hidden text-skblack dark:text-neutral-100  ${
 				isOpenMenu && "overflow-y-hidden h-screen"
-			} bg-white dark:bg-gray-900`}
+			} bg-white dark:bg-skblack`}
 		>
 			<Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
 			<Hero />

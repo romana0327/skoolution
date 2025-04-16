@@ -3,13 +3,18 @@ import Button from "./ui/Button";
 
 export default function WhySK() {
 	return (
-		<section className="bg-skblue-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen">
+		<section className="bg-skblue-second dark:bg-skblack-second w-full flex justify-center px-5 xl:px-0 py-10 text-[14px] lg:text-[16px] min-h-screen">
 			<div className="flex flex-col  sm:flex-row justify-between items-center gap-0 sm:gap-3 md:gap-10 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Left Column */}
 				<img
 					src="/sk/student_2.webp"
 					alt="Student 2"
-					className="max-w-[350px] w-2/3 min-[460px]:w-2/3 sm:w-1/2  md:w-2/4  -mb-5 sm:-mb-0"
+					className="max-w-[350px] w-2/3 min-[460px]:w-2/3 sm:w-1/2  md:w-2/4  -mb-5 sm:-mb-0 inline-block dark:hidden"
+				/>
+				<img
+					src="/sk_dark/student_2.webp"
+					alt="Student 2"
+					className="max-w-[350px] w-2/3 min-[460px]:w-2/3 sm:w-1/2  md:w-2/4  -mb-5 sm:-mb-0 hidden dark:inline-block"
 				/>
 				{/* Right Column */}
 				<div className="flex flex-col gap-6">
@@ -17,7 +22,7 @@ export default function WhySK() {
 						<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold">
 							Pourquoi <span className="text-skblue">Skoolution?</span>
 						</h2>
-						<p className="text-skblack-second">
+						<p className="text-skgray dark:text-skgray-second">
 							La plateforme qui s'adapte à vos besoins pour améliorer vos notes
 						</p>
 					</div>
@@ -28,7 +33,7 @@ export default function WhySK() {
 								<FlaskConical />
 							</div>
 							<h3 className="font-bold">Suivi personnalisé</h3>
-							<p className="text-skblack-second -my-1.5 max-w-[300px]">
+							<p className="text-skgray dark:text-skgray-second -my-1.5 max-w-[300px]">
 								Des tests qui s'adaptent à ton niveau et te guident étape par
 								étape.
 							</p>
@@ -39,7 +44,7 @@ export default function WhySK() {
 								<FlaskConical />
 							</div>
 							<h3 className="font-bold">Rapports de progression</h3>
-							<p className="text-skblack-second -my-1.5 max-w-[300px]">
+							<p className="text-skgray dark:text-skgray-second -my-1.5 max-w-[300px]">
 								Identifie tes points faibles et améliore tes compétences grâce à
 								un suivi en temps réel.
 							</p>
@@ -50,7 +55,7 @@ export default function WhySK() {
 								<FlaskConical />
 							</div>
 							<h3 className="font-bold">Programme officiel marocain</h3>
-							<p className="text-skblack-second -my-1.5 max-w-[300px]">
+							<p className="text-skgray dark:text-skgray-second -my-1.5 max-w-[300px]">
 								Des contenus alignés sur les référentiels du Ministère de
 								l'Éducation.
 							</p>
@@ -61,7 +66,7 @@ export default function WhySK() {
 								<FlaskConical />
 							</div>
 							<h3 className="font-bold">Flexibilité</h3>
-							<p className="text-skblack-second -my-1.5 lg:max-w-[300px]">
+							<p className="text-skgray dark:text-skgray-second -my-1.5 lg:max-w-[300px]">
 								Révisez quand vous voulez, où vous voulez, sur tous vos
 								appareils.
 							</p>

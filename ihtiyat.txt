@@ -1,7 +1,7 @@
 {/* White div second student */}
 						<div className="absolute -bottom-12 left-1/2 -translate-x-1/2 rounded-lg shadow-lg bg-white p-4 flex flex-col justify-center items-center gap-1.5">
 							<p className="font-bold">56, 5470+</p>
-							<p className="text-skblack-second mb-2">Élèves apprennents</p>
+							<p className="text-skgray mb-2">Élèves apprennents</p>
 							<div className="flex">
 								<img
 									src="/SK/profile_1.webp"

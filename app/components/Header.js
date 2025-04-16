@@ -49,7 +49,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					</div>
 					<a
 						href="#"
-						className="flex sm:hidden border cursor-pointer  border-gray-400 p-2.5 rounded-full  hover:bg-neutral-100 bg-neutral-50"
+						className="flex sm:hidden border cursor-pointer  border-gray-400 p-2.5 rounded-full  hover:bg-neutral-100 bg-neutral-50 dark:bg-neutral-800 dark:hover:bg-neutral-700"
 					>
 						<LogIn size={20} strokeWidth={2} className="text-skblue" />
 					</a>
@@ -76,7 +76,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					/>
 					{/* List Menu */}
 					<div
-						className={`w-screen bg-white py-8 flex flex-col items-center absolute -right-5 top-8 gap-9 transition-all duration-500 ${
+						className={`w-screen bg-white dark:bg-skblack py-8 flex flex-col items-center absolute -right-5 top-8 gap-9 transition-all duration-500 ${
 							isOpenMenu
 								? "translate-x-0 opacity-100"
 								: "translate-x-[100%] opacity-100"

@@ -21,13 +21,13 @@ export default function Hero() {
 				</h2>
 				{/* Second */}
 				<div className="flex flex-col gap-2">
-					<p className="text-skblack-second block w-full sm:w-7/8 md:w-5/6">
+					<p className="text-skgray dark:text-skgray-second block w-full sm:w-7/8 md:w-5/6">
 						Bienvenue sur SKOOLUTION, la plateforme d’évaluation en ligne pour
 						les lycéens au Maroc.
 					</p>
 					<div className="flex items-center  gap-2">
 						<img src="/morocco.webp" alt="Moroccan Flag" />
-						<p className="text-skblack-second text-[14px]">
+						<p className="text-skgray dark:text-skgray-second text-[14px]">
 							Programme officiel 2024-2025
 						</p>
 					</div>
@@ -48,7 +48,12 @@ export default function Hero() {
 				<img
 					src="/sk/student_1.webp"
 					alt="Student"
-					className="w-7/8 min-[460px]:w-2/3 sm:w-full md:w-3/4"
+					className="w-7/8 min-[460px]:w-2/3 sm:w-full md:w-3/4 inline-block dark:hidden"
+				/>
+				<img
+					src="/sk_dark/student_1.webp"
+					alt="Student"
+					className="w-7/8 min-[460px]:w-2/3 sm:w-full md:w-3/4 hidden dark:inline-block"
 				/>
 			</div>
 		</section>
