@@ -9,7 +9,7 @@ export default function Faqs() {
 			<h2 className="text-4xl md:text-5xl font-bold">
 				Vous avez des <span className="text-skblue">Questions ?</span>
 			</h2>
-			<div className="grid grid-cols-1 min-[890px]:grid-cols-2 gap-5">
+			<div className="grid grid-cols-1 min-[960px]:grid-cols-2 gap-5">
 				<Faq
 					title="Est-ce que Skoolution est vraiment gratuit ?"
 					description="Oui, vous pouvez essayer Skoolution gratuitement pendant 7 jours."

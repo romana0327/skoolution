@@ -8,21 +8,19 @@ export default function Faq({ title, description }) {
 		<div
 			className={`${
 				appear
-					? "bg-skblue text-white h-auto"
-					: "bg-white dark:bg-skblack-second text-skblack dark:text-skgray-second h-[84px] min-[450px]:h-[61px]"
+					? "bg-skblue text-white max-h-[500px] duration-1000"
+					: "bg-white dark:bg-skblack-second text-skblack dark:text-skgray-second max-h-[84px] min-[450px]:max-h-[61px]  duration-500"
 			}
-      relative border border-skgray/30 py-4.5 pl-6 pr-13 cursor-pointer transition-all duration-500`}
+	  relative border border-skgray/30 py-4.5 pl-6 pr-13 cursor-pointer transition-all`}
 			onClick={() => {
 				setAppear(!appear);
 			}}
 		>
-			<h3>{title}</h3>
+			<h3 className="text-wrap sm:text-nowrap">{title}</h3>
 			<p
 				className={`${
-					appear
-						? "translate-y-0 opacity-100 scale-100"
-						: "-translate-y-10 opacity-0 scale-0"
-				} mt-4 italic  transition-all duration-500`}
+					appear ? "translate-y-0 opacity-100" : "-translate-y-3 opacity-0"
+				} mt-4 italic  transition-transform duration-500`}
 			>
 				{description}
 			</p>
