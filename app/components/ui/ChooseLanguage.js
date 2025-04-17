@@ -1,10 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import Flag from "react-world-flags";
 
 export default function ChooseLanguage() {
+	// Hidde Languages On Fucus Change
+	const dropdownRef = useRef(null);
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+			if (
+				dropdownRef.current &&
+				!dropdownRef.current.contains(event.target) // clicked outside it
+			) {
+				setIsOpen(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
 	// Change back Language
 	const { i18n } = useTranslation();
 	const changeLanguage = (lng) => {
@@ -21,7 +37,7 @@ export default function ChooseLanguage() {
 		{ code: "MA", label: "Arabe" },
 	];
 	return (
-		<div className="relative z-20">
+		<div className="relative z-20" ref={dropdownRef}>
 			<button
 				onClick={() => {
 					setIsOpen(!isOpen);
