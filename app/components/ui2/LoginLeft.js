@@ -46,7 +46,7 @@ export default function LoginForm() {
             </button>
           </form>
         </div>
-  
+           {/* social loginn */}
         {/* social login */}
         <div>
           <div className="flex items-center my-4 md:pt-10">
