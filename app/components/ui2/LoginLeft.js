@@ -20,7 +20,8 @@ export default function LoginForm() {
                 className="w-full border py-2 px-3 pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
-  
+            
+              {/* passwordd */}
             {/* password */}
             <div className="relative">
               <p className="ml-5 text-gray-500">Mot de passe</p>
