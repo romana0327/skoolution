@@ -23,7 +23,7 @@ export default function LoginPage() {
         <p className="text-sm mb-6 text-center md:text-left mt-10 text-gray-500">Veuillez entrer vos informations!</p>
 
         <form className="space-y-4 mt-5">
-          <p className="ml-5 text-gray-500">Adress email</p>
+          <p className="ml-5 text-gray-500">Adresse email</p>
           <Image  src="/images/Vector.svg" alt="email" width={24}
   height={24} className=" left-0 ml-226 mt-3 absolute"/>
           <input
