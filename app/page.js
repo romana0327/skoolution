@@ -15,9 +15,7 @@ export default function Home() {
 	const [isOpenMenu, setIsOpenMenu] = useState(false);
 	return (
 		<section
-			className={`w-full flex flex-col items-center overflow-x-hidden text-skblack dark:text-neutral-100  ${
-				isOpenMenu && "overflow-y-hidden h-screen"
-			} bg-white dark:bg-gray-900`}
+			className={`w-full flex flex-col items-center overflow-x-hidden text-skblack dark:text-neutral-100   bg-white dark:bg-skblack`}
 		>
 			<Header isOpenMenu={isOpenMenu} setIsOpenMenu={setIsOpenMenu} />
 			<Hero />

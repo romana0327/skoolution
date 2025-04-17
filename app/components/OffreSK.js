@@ -13,13 +13,13 @@ export default function OffreSK() {
 					<p className="text-nowrap">Ce que vous offre</p>
 					<p className="text-skblue">Skoolution</p>
 				</h2>
-				<p className="text-skblack-second leading-7">
+				<p className="text-skgray dark:text-skgray-second leading-7">
 					Skoolution vous offre un tableau de bord personnalisé, des tests
 					interactifs en cours et des rapports de progression détaillés pour un
 					suivi optimal.
 				</p>
 				<Button
-					href="#"
+					href="/login"
 					color="text-white"
 					bg="bg-skblue"
 					text="Commencer"

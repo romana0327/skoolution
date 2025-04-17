@@ -27,10 +27,10 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 				>
 					Accueil
 				</a>
-				<a href="#">Services</a>
-				<a href="#">Fonctionnalité</a>
-				<a href="#">Témoignage</a>
-				{/* <a href="#">FAQ</a> */}
+				<a href="#services">Services</a>
+				<a href="#fonctionnalité">Fonctionnalité</a>
+				<a href="#témoignage">Témoignage</a>
+				{/* <a href="#faqs">FAQs</a> */}
 			</nav>
 			{/* Login + Menu*/}
 			<div className="flex justify-center items-center">
@@ -42,15 +42,19 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					<div className="hidden sm:flex">
 						
 						<Button
+
 							href="/commencez"
+
+						
+
 							color="text-white"
 							bg="bg-skblue"
 							text="Commencer"
 						/>
 					</div>
 					<a
-						href="#"
-						className="flex sm:hidden border cursor-pointer  border-gray-400 p-2.5 rounded-full  hover:bg-neutral-100 bg-neutral-50"
+						href="/login"
+						className="flex sm:hidden border cursor-pointer  border-gray-400 p-2.5 rounded-full  hover:bg-neutral-100 bg-neutral-50 dark:bg-neutral-800 dark:hover:bg-neutral-700"
 					>
 						<LogIn size={20} strokeWidth={2} className="text-skblue" />
 					</a>
@@ -77,22 +81,22 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					/>
 					{/* List Menu */}
 					<div
-						className={`w-screen bg-white py-8 flex flex-col items-center absolute -right-5 top-8 gap-9 transition-all duration-500 ${
+						className={`w-screen bg-white dark:bg-skblack py-8 flex flex-col items-center absolute -right-5 top-8 gap-9 transition-all duration-500 ${
 							isOpenMenu
 								? "translate-x-0 opacity-100"
 								: "translate-x-[100%] opacity-100"
-						} h-screen `}
+						} h-[calc(100vh-66px)] `}
 					>
 						<a
-							href="#"
+							href="#accueil"
 							className="relative font-semibold text-skblue before:absolute before:bottom-0 before:w-[calc(100%+10px)] before:-left-[5px] before:h-0.5 before:bg-skblue"
 						>
 							Accueil
 						</a>
-						<a href="#">Services</a>
-						<a href="#">Fonctionnalité</a>
-						<a href="#">Témoignage</a>
-						<a href="#">FAQ</a>
+						<a href="#services">Services</a>
+						<a href="#fonctionnalité">Fonctionnalité</a>
+						<a href="#témoignage">Témoignage</a>
+						<a href="#faqs">FAQs</a>
 					</div>
 				</div>
 			</div>

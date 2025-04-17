@@ -1,10 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 import Flag from "react-world-flags";
 
 export default function ChooseLanguage() {
+	// Hidde Languages On Fucus Change
+	const dropdownRef = useRef(null);
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+			if (
+				dropdownRef.current &&
+				!dropdownRef.current.contains(event.target) // clicked outside it
+			) {
+				setIsOpen(false);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
 	// Change back Language
 	const { i18n } = useTranslation();
 	const changeLanguage = (lng) => {
@@ -21,7 +37,7 @@ export default function ChooseLanguage() {
 		{ code: "MA", label: "Arabe" },
 	];
 	return (
-		<div className="relative z-20">
+		<div className="relative z-20" ref={dropdownRef}>
 			<button
 				onClick={() => {
 					setIsOpen(!isOpen);
@@ -48,7 +64,7 @@ export default function ChooseLanguage() {
 								changeLanguage(lang.label.slice(0, 2).toLocaleLowerCase());
 							}}
 							key={lang.code}
-							className={`w-full flex justify-start pl-3 items-center cursor-pointer gap-2 backdrop-blur-lg hover:dark:bg-white/15 hover:bg-gray-200 py-2 ${
+							className={`w-full flex justify-start pl-3 items-center cursor-pointer gap-2 backdrop-blur-lg dark:hover:bg-neutral-700 hover:bg-neutral-100 dark:bg-neutral-800 bg-neutral-50 py-2 ${
 								lang == languages[languages.length - 1]
 									? ""
 									: " border-b border-gray-400 dark:border-gray-400"
