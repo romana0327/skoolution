@@ -12,7 +12,7 @@ export default function SwiperComponents() {
 		<>
 			<div className="relative">
 				{/* Custom Navigation Buttons */}
-				<div className="absolute -top-2 sm:-top-30 -right-2 sm:right-0 z-10 flex space-x-2 p-4 ">
+				<div className="absolute -top-2 min-[425px]:-top-15 min-[490px]:-top-25 min-[640px]:-top-30 -right-2 min-[425px]:right-0 z-10 flex space-x-2 p-4 ">
 					<button
 						onClick={() => swiperRef.current?.slidePrev()}
 						className="text-skblue dark:text-white border-1 dark:border-2 border-skblue dark:border-white p-1 sm:p-2 rounded-full cursor-pointer"

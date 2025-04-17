@@ -5,7 +5,7 @@ export default function Button({ text, color, bg, href, addStyle }) {
 		<div>
 			<a
 				href={href}
-				className={`group flex justify-center items-center gap-1 border border-skblue dark:border-skblack text-base ${color} ${bg} px-5 sm:px-7 lg:px-3 xl:px-7 h-[40px] font-semibold text-nowrap rounded-xs ${addStyle} `}
+				className={`group flex justify-center items-center gap-1 border border-skblue dark:border-skblack text-base ${color} ${bg} px-0 lg:px-3 xl:px-7 h-[40px] font-semibold text-nowrap rounded-xs ${addStyle}`}
 			>
 				<p className="translate-x-[14px] group-hover:translate-x-0 transition-all duration-500">
 					{text}

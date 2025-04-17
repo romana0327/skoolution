@@ -1,4 +1,4 @@
-import { FlaskConical } from "lucide-react";
+import { FlaskConical, Loader, NotepadText, Waypoints } from "lucide-react";
 import Button from "./ui/Button";
 
 export default function WhySK() {
@@ -44,7 +44,7 @@ export default function WhySK() {
 						{/* Second */}
 						<div className="flex flex-col gap-4">
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
-								<FlaskConical />
+								<NotepadText />
 							</div>
 							<h3 className="font-bold">Rapports de progression</h3>
 							<p className="text-skgray dark:text-skgray-second -my-1.5 max-w-[300px]">
@@ -55,7 +55,7 @@ export default function WhySK() {
 						{/* Third */}
 						<div className="flex flex-col gap-4">
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
-								<FlaskConical />
+								<Loader />
 							</div>
 							<h3 className="font-bold">Programme officiel marocain</h3>
 							<p className="text-skgray dark:text-skgray-second -my-1.5 max-w-[300px]">
@@ -66,7 +66,7 @@ export default function WhySK() {
 						{/* Fourth */}
 						<div className="flex flex-col gap-4">
 							<div className="bg-skblue-third w-fit p-4 text-skblue rounded-sm">
-								<FlaskConical />
+								<Waypoints />
 							</div>
 							<h3 className="font-bold">Flexibilité</h3>
 							<p className="text-skgray dark:text-skgray-second -my-1.5 lg:max-w-[300px]">
@@ -80,7 +80,7 @@ export default function WhySK() {
 						text="voir plus"
 						bg="bg-white"
 						color="text-skblue"
-						addStyle="w-[160px]"
+						addStyle="w-[160px] hover:inset-shadow-[0_25px_25px] hover:inset-shadow-black/12"
 					/>
 				</div>
 			</div>

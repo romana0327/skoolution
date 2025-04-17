@@ -48,7 +48,7 @@ export default function ChooseLanguage() {
 								changeLanguage(lang.label.slice(0, 2).toLocaleLowerCase());
 							}}
 							key={lang.code}
-							className={`w-full flex justify-start pl-3 items-center cursor-pointer gap-2 backdrop-blur-lg hover:dark:bg-white/15 hover:bg-gray-200 py-2 ${
+							className={`w-full flex justify-start pl-3 items-center cursor-pointer gap-2 backdrop-blur-lg dark:hover:bg-neutral-700 hover:bg-neutral-100 dark:bg-neutral-800 bg-neutral-50 py-2 ${
 								lang == languages[languages.length - 1]
 									? ""
 									: " border-b border-gray-400 dark:border-gray-400"

@@ -25,7 +25,7 @@ export default function Steps() {
 					<p className="text-skgray dark:text-skgray-second  -second text-sm">
 						Créez votre compte en 2 minutes avec un formulaire simple.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						01
 					</div>
 					{/* Start Horizontal Arrow */}
@@ -44,7 +44,7 @@ export default function Steps() {
 						Identifiez vos points forts et à améliorer pour personnaliser votre
 						apprentissage.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						02
 					</div>
 					{/* Start Horizontal Arrows */}
@@ -62,7 +62,7 @@ export default function Steps() {
 					<p className="text-skgray dark:text-skgray-second  text-sm">
 						Recevez un programme de révision personnalisé selon vos besoins.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						03
 					</div>
 					{/* Start Horizontal Arrows */}
@@ -80,7 +80,7 @@ export default function Steps() {
 					<p className="text-skgray dark:text-skgray-second  text-sm">
 						Consultez vos résultats instantanément pour suivre vos progrès.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						04
 					</div>
 					{/* Start Horizontal Arrows */}
@@ -99,7 +99,7 @@ export default function Steps() {
 						Répétez les révisions jusqu’à l’évaluation finale pour suivre vos
 						progrès.
 					</p>
-					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
+					<div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-skblue-second dark:bg-[#252D36] w-30 h-30 rounded-full text-skblue flex justify-center items-center text-5xl font-semibold">
 						05
 					</div>
 				</div>
