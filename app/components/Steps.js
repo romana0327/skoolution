@@ -9,7 +9,7 @@ export default function Steps() {
 		>
 			{/* Top Section */}
 			<div className="flex flex-col gap-4 mb-15">
-				<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold">
+				<h2 className="text-3xl md:text-4xl xl:text-5xl font-bold">
 					Comment <span className="text-skblue">ça marche ?</span>
 				</h2>
 				<p className="text-skgray dark:text-skgray-second ">

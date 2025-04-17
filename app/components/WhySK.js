@@ -22,7 +22,7 @@ export default function WhySK() {
 				{/* Right Column */}
 				<div className="flex flex-col gap-6">
 					<div className="flex flex-col gap-4">
-						<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold">
+						<h2 className="text-3xl md:text-4xl xl:text-5xl font-bold">
 							Pourquoi <span className="text-skblue">Skoolution?</span>
 						</h2>
 						<p className="text-skgray dark:text-skgray-second">

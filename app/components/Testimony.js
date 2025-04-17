@@ -10,7 +10,7 @@ export default function Testimony() {
 			<div className="flex flex-col justify-between gap-15 w-full lg:w-11/12 xl:w-10/12 max-w-[1260px]">
 				{/* Top Column */}
 				<div className="flex flex-col gap-4">
-					<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold">
+					<h2 className="text-3xl md:text-4xl xl:text-5xl font-bold">
 						Ce que nos <span className="text-skblue">Élèves</span> disent?
 					</h2>
 					<p className="text-skgray  dark:text-skgray-second">
