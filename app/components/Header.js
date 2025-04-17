@@ -42,7 +42,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					<div className="hidden sm:flex">
 						
 						<Button
-							href="/commencez"
+							href="/login"
 							color="text-white"
 							bg="bg-skblue"
 							text="Commencer"

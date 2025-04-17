@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 export default function LoginForm() {
     return (
-      <div className="w-full md:w-1/2 h-full flex flex-col justify-between p-6">
+      <div className="w-full md:w-1/2 h-full flex flex-col justify-between p-6 md:p-26">
         <div>
-          <h1 className="text-5xl font-bold text-center md:text-left">Se Connecter</h1>
-          <p className="text-sm mt-4 mb-6 text-center md:text-left text-gray-500">
+          <h1 className="text-5xl font-bold text-center md:text-left md:pb-10">Se Connecter</h1>
+          <p className="text-sm mt-4 mb-6 text-center md:text-left text-gray-500 md:ml-4">
             Veuillez entrer vos informations!
           </p>
   
@@ -48,16 +48,16 @@ export default function LoginForm() {
   
         {/* social login */}
         <div>
-          <div className="flex items-center my-4">
+          <div className="flex items-center my-4 md:pt-10">
             <hr className="flex-grow border-gray-300" />
             <span className="px-2 text-gray-500 text-sm">Ou</span>
             <hr className="flex-grow border-gray-300" />
           </div>
   
-          <div className="flex justify-center space-x-4 mb-4">
-            <Image src="/sk/Group 1000004178.svg" alt="google" width={40} height={40} className="hover:scale-105 transition" />
-            <Image src="/sk/Group 1000004177.svg" alt="facebook" width={40} height={40} className="hover:scale-105 transition" />
-            <Image src="/sk/Group 1000004179.svg" alt="tiktok" width={40} height={40} className="hover:scale-105 transition" />
+          <div className="flex justify-center space-x-4  md:space-x-8 mb-4 ">
+            <Image src="/sk/Group 1000004178.svg" alt="google" width={40} height={40} className="hover:scale-105 transition md:w-20" />
+            <Image src="/sk/Group 1000004177.svg" alt="facebook" width={40} height={40} className="hover:scale-105 transition md:w-20" />
+            <Image src="/sk/Group 1000004179.svg" alt="tiktok" width={40} height={40} className="hover:scale-105 transition md:w-20" />
           </div>
   
           <p className="text-center text-sm text-gray-500">

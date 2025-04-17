@@ -6,7 +6,7 @@ export default function LoginLeft() {
 ">
         {/* Bienvenue */}
         <p className="text-white mt-10 md:mt-30 max-auto md:ml-[130px] text-2xl leading-[normal]
-        flex flex-col justify-between md:mb-30 font-min text-center md:text-left 
+        flex flex-col justify-between md:mb-25 font-min text-center md:text-left 
           font-extralight">
           Bienvenue à
         </p>
