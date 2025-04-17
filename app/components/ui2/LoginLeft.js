@@ -12,7 +12,7 @@ export default function LoginForm() {
           <form className="space-y-4">
             {/* email */}
             <div className="relative">
-              <p className="ml-5 text-gray-500">Adresse email</p>
+              <p className="ml-5 text-gray-500"> adresse email</p>
               <Image src="/sk/Vector.svg" alt="email" width={24} height={24} className="absolute ml-5 mt-3  w-6" />
               <input
                 type="email"
