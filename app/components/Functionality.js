@@ -24,7 +24,7 @@ export default function Functionality() {
 				{/* Right Column */}
 				<div className="w-full sm:w-1/2 flex flex-col gap-12">
 					<div className="flex flex-col gap-3">
-						<h2 className="text-4xl md:text-5xl font-bold">
+						<h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-bold">
 							<span className="text-skblue">Fonctionnalité</span> clé
 						</h2>
 						<p className="text-skgray dark:text-skgray-second">
