@@ -39,15 +39,7 @@ export default function Header({ isOpenMenu, setIsOpenMenu }) {
 					<ChooseLanguage />
 					<Mode />
 					{/* Login */}
-					<div className="hidden sm:flex">
-						
-						<Button
-							href="/login"
-							color="text-white"
-							bg="bg-skblue"
-							text="Commencer"
-						/>
-					</div>
+					
 					<a
 						href="#"
 						className="flex sm:hidden border cursor-pointer  border-gray-400 p-2.5 rounded-full  hover:bg-neutral-100 bg-neutral-50"
