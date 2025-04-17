@@ -2,8 +2,8 @@
 
 
 import '@fontsource/inter';
-import LoginLeft from 'C:/Users/AdMin/skoolution-v2/app/components/ui2/LoginForm.js';
-import LoginForm from 'C:/Users/AdMin/skoolution-v2/app/components/ui2/LoginLeft.js';
+import LoginLeft from '/../../components/ui2/LoginForm';
+import LoginForm from '/../../components/ui2/LoginLeft';
 
 export default function LoginPage() {
   return (
