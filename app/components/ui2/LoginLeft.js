@@ -1,71 +1,118 @@
+import { useState } from 'react';
+import axios from 'axios';
 import Image from 'next/image';
 
 export default function LoginForm() {
-    return (
-      <div className="w-full md:w-1/2 h-full flex flex-col justify-between p-6 md:p-26">
-        <div>
-          <h1 className="text-5xl font-bold text-center md:text-left md:pb-10">Se Connecter</h1>
-          <p className="text-sm mt-4 mb-6 text-center md:text-left text-gray-500 md:ml-4">
-            Veuillez entrer vos informations!
-          </p>
-  
-          <form className="space-y-4">
-            {/* email */}
-            <div className="relative">
-              <p className="ml-5 text-gray-500"> adresse email</p>
-              <Image src="/sk/Vector.svg" alt="email" width={24} height={24} className="absolute ml-5 mt-3  w-6" />
-              <input
-                type="email"
-                placeholder="| Ecrivez votre email ici..."
-                className="w-full border py-2 px-3 pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-            
-              {/* passwordd */}
-            {/* password */}
-            <div className="relative">
-              <p className="ml-5 text-gray-500">Mot de passe</p>
-              <Image src="/sk/Vector2.svg" alt="password" width={24} height={24} className="absolute ml-5 mt-2 w-[20px]" />
-              <input
-                type="password"
-                placeholder="| Ecrivez votre mot de passe ici..."
-                className="w-full border py-2 px-3 pl-12 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              />
-            </div>
-  
-            <div className="flex items-center justify-between text-sm">
-              <label className="flex items-center">
-                <input type="checkbox" className="mr-2 rounded accent-blue-500" />
-                <span className="text-gray-500">Se souvenir de moi</span>
-              </label>
-              <a href="#" className="text-blue-600 hover:underline">Mot de passe oublié ?</a>
-            </div>
-  
-            <button type="submit" className="w-full bg-[#0047BA] text-white py-2 rounded-md hover:bg-gray-300 transition">
-              Se Connecter
-            </button>
-          </form>
-        </div>
-           {/* social loginn */}
-        {/* social login */}
-        <div>
-          <div className="flex items-center my-4 md:pt-10">
-            <hr className="flex-grow border-gray-300" />
-            <span className="px-2 text-gray-500 text-sm">Ou</span>
-            <hr className="flex-grow border-gray-300" />
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post('http://localhost:3000/auth/login', {
+        email,
+        password,
+      });
+
+      console.log(response.data.message);
+      alert(response.data.message);
+
+      // Redirection vers le dashboard
+      window.location.href = 'https://skoolution.matboua.com/dashboard';
+    } catch (err) {
+      if (err.response) {
+        setError(err.response.data.message);
+      } else {
+        setError('Une erreur est survenue, veuillez réessayer.');
+      }
+    }
+  };
+
+  return (
+    <div className="w-full md:w-[6900px] flex flex-col justify-center px-6 py-10 relative ">
+      <div className="w-full max-w-md mx-auto  ">
+        <div className="md:mb-14">
+        <h1 className="text-3xl md:text-6xl md:mr-600 font-bold text-center md:text-left whitespace-nowrap">Se Connecter</h1>
+        <p className="text-sm mt-2 mb-6 text-center md:text-left text-gray-500">
+          Veuillez entrer vos informations!
+        </p></div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          {/* Email */}
+          <div className="relative">
+            <p className="text-gray-500 mb-1">Adresse email</p>
+            <Image
+              src="/sk/Vector.svg"
+              alt="email"
+              width={20}
+              height={20}
+              className="absolute top-10 left-3 md:mt-[7px]  md:ml-[5px]"
+            />
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="       |Ecrivez votre email ici..."
+              className="w-full border py-3 pl-10 pr-3 text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-125"
+            />
           </div>
-  
-          <div className="flex justify-center space-x-4  md:space-x-8 mb-4 ">
-            <Image src="/sk/Group 1000004178.svg" alt="google" width={40} height={40} className="hover:scale-105 transition md:w-20" />
-            <Image src="/sk/Group 1000004177.svg" alt="facebook" width={40} height={40} className="hover:scale-105 transition md:w-20" />
-            <Image src="/sk/Group 1000004179.svg" alt="tiktok" width={40} height={40} className="hover:scale-105 transition md:w-20" />
+
+          {/* Password */}
+          <div className="relative">
+            <p className="text-gray-500 mb-1">Mot de passe</p>
+            <Image
+              src="/sk/vector2.svg"
+              alt="password"
+              width={20}
+              height={20}
+              className="absolute top-10  left-3 w-4 ml-1  md:mt-[4px]  md:ml-[7px]"
+            />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="       |Ecrivez votre mot de passe ici..."
+              className="w-full border py-3 pl-10 pr-3 text-sm rounded focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-125"
+            />
           </div>
-  
-          <p className="text-center text-sm text-gray-500">
-            Vous n'avez pas de compte ? <a href="#" className="text-blue-600 hover:underline">Cliquez ici!</a>
-          </p>
+
+          <div className="flex items-center justify-between text-sm text-gray-500">
+            <label className="flex items-center space-x-2">
+              <input type="checkbox" className="accent-blue-500" />
+              <span>Se souvenir de moi</span>
+            </label>
+            <a href="#" className="text-blue-600 hover:underline">Mot de passe oublié ?</a>
+          </div>
+
+          <button type="submit" className=" py-3 w-full bg-[#0047BA] text-white py-2 rounded-md hover:bg-gray-400 transition md:w-125">
+            Se Connecter
+          </button>
+        </form>
+
+        {/* Message d'erreur */}
+        {error && <p className="text-red-500 text-sm text-center mt-4">{error}</p>}
+
+        {/* Séparateur */}
+        <div className="flex items-center my-6 md:w-125">
+          <hr className="flex-grow border-gray-300" />
+          <span className="px-3 text-gray-500 text-sm ">Ou</span>
+          <hr className="flex-grow border-gray-300" />
         </div>
+
+        {/* Boutons sociaux */}
+        <div className="flex justify-center space-x-4 md:w-125">
+          <Image src="/sk/Group 1000004178.svg" alt="google" width={50} height={40} className="md:w-18  hover:scale-104 transition  " />
+          <Image src="/sk/Group 1000004177.svg" alt="facebook" width={50} height={40} className="md:w-18 hover:scale-105 transition  " />
+          <Image src="/sk/Group 1000004179.svg" alt="tiktok" width={50} height={40} className="md:w-18 hover:scale-105 transition  " />
+        </div>
+
+        {/* Lien d'inscription */}
+        <p className="text-center text-sm text-gray-500 mt-4 md:w-125">
+          Vous n'avez pas de compte ? <a href="#" className="text-blue-600 hover:underline">Cliquez ici!</a>
+        </p>
       </div>
-    );
-  }
-  
+    </div>
+  );
+}
